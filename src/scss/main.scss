@@ -4,24 +4,22 @@
 ******************************************************************************/
 html {
 
-  //320px以下
-  font-size: 12px;
+  font-family: 'Shippori Mincho', serif;
+  line-height: 1.5;
+  font-size: 1.25vw;
 
-  //320px～999px
-  @media (min-width: 320px) {
-    font-size: calc((14 - 12) * ((100vw - 320px) / (999 - 320)) + 12px);
-  }
-  
-  //999px以上
-  @media (min-width: 999px) {
-    font-size: 14px;
+  @include tablet {
+    font-size: 0.5vw;
   }
 
-  body{
-    font-family: 'Shippori Mincho', serif;
-    color: #333;
+  @include pc {
+    font-size: 10px;
   }
-  
+}
+
+body{ 
+  color: #333;
+  font-size: 1.6rem;
 }
 
 // @use "reset/reset" as *;
