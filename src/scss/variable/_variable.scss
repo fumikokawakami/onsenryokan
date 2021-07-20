@@ -1,3 +1,17 @@
 
-// $color1:#555555;
+$colors: (
+    white: #fff,
+    black: #000,
+    text: #333,
+    gray: #6E6E6E,
+    lightgray: #F2F2F2,
+    red: #FF0000,
+    primary: #4D0000,
+    gold: #B8860BEA,
+    baige: #FFFFDD,
+);
+
+@function cl($key) {
+    @return map-get($colors, $key);
+}
 
