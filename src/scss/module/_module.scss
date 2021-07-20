@@ -1,0 +1,54 @@
+
+@mixin media($breakpoint: 640px){
+    @media only screen and (max-width:$breakpoint) {
+        @content;
+    }
+}
+
+@mixin media_medium($breakpoint: 840px){
+    @media only screen and (max-width:$breakpoint) {
+        @content;
+    }
+}
+
+@mixin ttl($size:2rem,$weight:bold,$align:center,$padding:46px 0, $margin:0) {
+    font-size: $size;
+    font-weight: $weight;
+    text-align: $align;
+    padding: $padding;
+    margin: $margin;
+}
+
+@mixin inner($width:80%,$max-width:1024px,$margin:0 auto,$padding: 0 0 64px) {
+    width: $width;
+    max-width: $max-width;
+    margin: $margin;
+    padding: $padding;
+}
+  
+@mixin txt($font-size: 1.2rem,$margin: 0 0 12px,$padding: 0,$line-height: 1.6,$text-align: left,$font-weight: normal) {
+    font-size: $font-size;
+    margin: $margin;
+    padding: $padding;
+    line-height: $line-height;
+    text-align: $text-align;
+    font-weight: $font-weight;
+}
+
+//箇条書きインデントつき
+@mixin txt-indent($font-size: 1.2rem,$margin: 0 0 12px,$line-height: 1.6,$text-align: left,$padding-left: 12px,$text-indent: -8px) {
+    font-size: $font-size;
+    margin: $margin;
+    line-height: $line-height;
+    text-align: $text-align;
+    padding-left: $padding-left;
+    text-indent: $text-indent;
+
+    &::before{
+        content: '・';
+        display: inline-block;
+        position: relative;
+        left: -6px;
+    }
+}
+

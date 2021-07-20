@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/******************************************************************************
+  main 
+******************************************************************************/
+html {
+
+  //320px以下
+  font-size: 12px;
+
+  //320px～999px
+  @media (min-width: 320px) {
+    font-size: calc((14 - 12) * ((100vw - 320px) / (999 - 320)) + 12px);
+  }
+  
+  //999px以上
+  @media (min-width: 999px) {
+    font-size: 14px;
+  }
+
+  body{
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "A-OTF 見出ゴMB31 Pr6N", "A-OTF Midashi Go MB31 Pr6N", "A-OTF 新ゴ Pro","A-OTF Shin Go Pro", "小塚ゴシック Pr6N", "Kozuka Gothic Pr6N", sans-serif; 
+    color: #333;
+  }
+  
+}
+
+@import "reset/**";
+@import "variable/**";
+@import "module/**";
+@import "page/**";
+
+
+
