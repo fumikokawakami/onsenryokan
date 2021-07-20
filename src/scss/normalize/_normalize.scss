@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/******************************************************************************
+  main 
+******************************************************************************/
+html {
+
+  font-family: 'Shippori Mincho', serif;
+  line-height: 1.5;
+  font-size: 1.25vw;
+
+  @include tablet {
+    font-size: 0.5vw;
+  }
+
+  @include pc {
+    font-size: 10px;
+  }
+}
+
+body{ 
+  color: #333;
+  font-size: 1.6rem;
+}
+
+
+

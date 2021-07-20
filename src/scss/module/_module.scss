@@ -1,5 +1,5 @@
 
-@mixin overTab($breakpoint: 700px){
+@mixin tablet($breakpoint: 700px){
     @media only screen and (min-width:$breakpoint) {
         @content;
     }
