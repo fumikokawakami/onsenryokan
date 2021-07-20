@@ -8,10 +8,10 @@
 // @use "page/header" as *;
 // @use "page/footer" as *;
 // @use "page/mv" as *;
-@import "/**";
+@import "module/**";
+@import "normalize/**";
 @import "reset/**";
 @import "variable/**";
-@import "module/**";
 @import "page/**";
 
 
