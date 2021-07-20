@@ -3,6 +3,45 @@
 ******************************************************************************/
 
 .header {
+    background-color: cl(primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    &-fixed {
 
+    }
+    &-logo {
+        width: 150px;
+        margin-left: 30px;
 
+    }
+    &-menu {
+        display: none;
+
+    }
+    &-nav {
+        
+        &-inner {
+    
+        }
+    }
+    &-navlist {
+        display: flex;
+        margin-right: 40px;
+        &-item {
+            font-size: 1.8rem;
+            &:not(:first-child) {
+                margin-left: 20px;
+            }
+            a {
+                color: cl(white);
+            }
+        }
+    }
 }
+
