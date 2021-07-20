@@ -1,12 +1,12 @@
 
-@mixin media($breakpoint: 640px){
-    @media only screen and (max-width:$breakpoint) {
+@mixin overTab($breakpoint: 700px){
+    @media only screen and (min-width:$breakpoint) {
         @content;
     }
 }
 
-@mixin media_medium($breakpoint: 840px){
-    @media only screen and (max-width:$breakpoint) {
+@mixin pc($breakpoint: 840px){
+    @media only screen and (min-width:$breakpoint) {
         @content;
     }
 }
@@ -19,7 +19,7 @@
     margin: $margin;
 }
 
-@mixin inner($width:80%,$max-width:1024px,$margin:0 auto,$padding: 0 0 64px) {
+@mixin inner($width:80%,$max-width:1280px,$margin:0 auto,$padding: 0 0 64px) {
     width: $width;
     max-width: $max-width;
     margin: $margin;
