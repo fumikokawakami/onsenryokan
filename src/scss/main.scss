@@ -18,16 +18,25 @@ html {
   }
 
   body{
-    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "A-OTF 見出ゴMB31 Pr6N", "A-OTF Midashi Go MB31 Pr6N", "A-OTF 新ゴ Pro","A-OTF Shin Go Pro", "小塚ゴシック Pr6N", "Kozuka Gothic Pr6N", sans-serif; 
+    font-family: 'Shippori Mincho', serif;
     color: #333;
   }
   
 }
 
+// @use "reset/reset" as *;
+// @use "variable/variable" as *;
+// @use "module/module" as *;
+// @use "page/header" as *;
+// @use "page/footer" as *;
+// @use "page/mv" as *;
+
 @import "reset/**";
 @import "variable/**";
 @import "module/**";
 @import "page/**";
+
+// @use "../../_include/scss/const" as *;
 
 
 
