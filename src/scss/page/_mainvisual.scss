@@ -1,0 +1,25 @@
+/******************************************************************************
+ mainVisual 
+******************************************************************************/
+
+.mainVisual {
+    background-image: url(../../../assets/img/top-bg.png);
+    background-size: 100% auto;
+    background-position: cover;
+    position: relative;
+    width: 100%;
+    height: 674px;
+    margin-top: 94px;
+
+    .mainVisual-title {
+        font-size: 5rem;
+        line-height: 1.7;
+        text-align: center;
+        color: cl(white);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+}
+
