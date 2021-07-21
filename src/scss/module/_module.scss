@@ -61,9 +61,9 @@
 
     a {
         width: $width;
-        max-width: $min-width;
+        min-width: $min-width;
         height: $height;
-        max-height: $min-height;
+        min-height: $min-height;
         display: flex;
         align-items: center;
         justify-content: center;
