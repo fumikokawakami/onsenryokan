@@ -52,11 +52,12 @@
     }
 }
 
-
 @mixin btn-base ($width:15.5rem,$min-width:155px,$height:3.7rem,$min-height:37px,$bg-color:cl(gold),$color:#fff,$margin:0,$radius:0.5em) {
     border-radius: $radius;
     background: $bg-color;
     margin: $margin;
+    display: flex;
+    justify-content: center;
 
     a {
         width: $width;
