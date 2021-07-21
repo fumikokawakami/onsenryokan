@@ -3,31 +3,36 @@
 ******************************************************************************/
 
 .plan {
-    .plan-contents-item {
-        width: 32.2rem;
-        height: 40.7rem;
-        background: cl(white);
-        margin-right: 2.7rem;
-        
-        .plan-contents-item-img {
-            background-color: cl(black);
-        }
-        
-        .plan-contents-item-text {
-            padding: 2.3rem 2.5rem 5rem;
-            color: cl(text);
+    .plan-contents {
+        margin-bottom: 10rem;
+        .plan-contents-item {
+            width: 32.2rem;
+            background: cl(white);
+            margin-right: 2.7rem;
             
-            .plan-contents-item-title {
-                font-size: 1.6rem;
-                line-height: 1.68;
-                margin-bottom: 6.6rem;
+            .plan-contents-item-img {
+                background-color: cl(white);
             }
             
-            .plan-contents-item-price {
-                font-size: 1.4rem;
+            .plan-contents-item-text {
+                padding: 2.3rem 2.5rem 5rem;
+                color: cl(text);
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 19.7rem;
                 
-                span {
-                    color: cl(red);
+                .plan-contents-item-title {
+                    font-size: 1.6rem;
+                    line-height: 1.68;
+                }
+                
+                .plan-contents-item-price {
+                    font-size: 1.4rem;
+                    
+                    span {
+                        color: cl(red);
+                    }
                 }
             }
         }
