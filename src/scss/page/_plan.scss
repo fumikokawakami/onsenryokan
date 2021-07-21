@@ -37,5 +37,37 @@
             }
         }
     }
+
+    .plan-featureList {
+        display: flex;
+        justify-content: space-between;
+
+        .plan-featureList-item {
+            width: calc((100% - 40px) / 3);
+            box-sizing: border-box;
+            padding: 2.3rem 2.3rem 5.3rem;
+            background-color: cl(white);
+            text-align: center;
+            color: cl(text);
+
+            .plan-featureList-item-img {
+                width: 16rem;
+                margin: 0 auto 1rem;
+            }
+
+            .plan-featureList-item-title {
+                font-size: 2.8rem;
+                margin-bottom: 4rem;
+            }
+
+            .plan-featureList-item-desc {
+                font-size: 1.8rem;
+                line-height: 1.44;
+                text-align: left;
+            }
+        }
+
+    }
+
 }
 
