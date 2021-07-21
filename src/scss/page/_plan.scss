@@ -1,0 +1,36 @@
+/******************************************************************************
+ plan 
+******************************************************************************/
+
+.plan {
+    .plan-contents-item {
+        width: 32.2rem;
+        height: 40.7rem;
+        background: cl(white);
+        margin-right: 2.7rem;
+        
+        .plan-contents-item-img {
+            background-color: cl(black);
+        }
+        
+        .plan-contents-item-text {
+            padding: 2.3rem 2.5rem 5rem;
+            color: cl(text);
+            
+            .plan-contents-item-title {
+                font-size: 1.6rem;
+                line-height: 1.68;
+                margin-bottom: 6.6rem;
+            }
+            
+            .plan-contents-item-price {
+                font-size: 1.4rem;
+                
+                span {
+                    color: cl(red);
+                }
+            }
+        }
+    }
+}
+
