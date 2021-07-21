@@ -1,0 +1,41 @@
+/******************************************************************************
+ blog 
+******************************************************************************/
+
+.blog {
+
+    .blog-contentsList {
+        margin-bottom: 6.2rem;
+    }
+
+    .blog-contentsList-item {
+        display: flex;
+        margin-bottom: 2.7rem;
+    }
+
+    .blog-contentsList-item-label {
+        width: 15.7rem;
+        min-width: 157px;
+        height: 3rem;
+        min-height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.4rem;
+        margin-right: 2rem;
+        color: cl(white);
+        text-align: center;
+        background-color: cl(primary);
+    }
+
+    .blog-contentsList-desc {
+        color: cl(white);
+        font-size: 2.4rem;
+        line-height: 1.1;
+    }
+
+    .blog-contents-button {
+        @include btn-base($margin: 0 auto);
+    }
+}
+
