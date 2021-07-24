@@ -2,6 +2,37 @@
  footer 
  ******************************************************************************/
  
-//  .footer {
-  
-// }
+.footer {
+    color: cl(white);
+    background-color: cl(primary);
+    
+    .footer-navList {
+        display: flex;
+        justify-content: center;
+        padding: 6.2rem 0;
+    }
+
+    .footer-navList-item {
+        font-size: 1.6rem;
+
+        &:not(:last-child) {
+            margin-right: 4rem;
+        }
+        
+        a {
+            color: cl(white);
+        }
+
+    }
+
+    .footer-logo {
+        width: 18.8rem;
+        margin: 0 auto 2rem;
+    }
+
+    .footer-copyright {
+        font-size: 1.6rem;
+        text-align: center;
+        padding-bottom: 1.5rem;
+    }
+}
